@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="IanSutherlandInventory.jnlp">
+  <information>
+    <title>IanSutherlandInventory</title>
+    <vendor>ian</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="IanSutherlandInventory.jar" size="12179" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="IanSutherlandInventory"  name="IanSutherlandInventory" />
+  <update check="always"/>
+</jnlp>

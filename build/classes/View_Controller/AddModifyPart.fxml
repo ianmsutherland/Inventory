@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="443.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddModifyPartController">
+   <children>
+      <Label fx:id="AddModifyTitle" layoutX="28.0" layoutY="21.0" text="Add Part">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="InHouseRadio" layoutX="170.0" layoutY="23.0" mnemonicParsing="false" onAction="#inHouseSelected" text="In-House" />
+      <RadioButton fx:id="OutsourcedRadio" layoutX="271.0" layoutY="23.0" mnemonicParsing="false" onAction="#outsourceSelected" text="Outsourced" />
+      <Label fx:id="IDLabel" layoutX="58.0" layoutY="73.0" text="ID" />
+      <TextField fx:id="IdText" disable="true" layoutX="155.0" layoutY="62.0" prefHeight="40.0" prefWidth="149.0" text="Auto Gen - Disabled">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="NameLabel" layoutX="58.0" layoutY="130.0" text="Name" />
+      <TextField fx:id="NameText" layoutX="155.0" layoutY="119.0" prefHeight="40.0" prefWidth="149.0" promptText="Part Name">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="InvLabel" layoutX="58.0" layoutY="187.0" text="Inv" />
+      <TextField fx:id="InvText" layoutX="155.0" layoutY="176.0" prefHeight="40.0" prefWidth="149.0" promptText="Inv">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="PriceLabel" layoutX="58.0" layoutY="244.0" text="Price/Cost" />
+      <TextField fx:id="PriceText" layoutX="155.0" layoutY="233.0" prefHeight="40.0" prefWidth="149.0" promptText="Price/Cost">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="MaxLabel" layoutX="58.0" layoutY="301.0" text="Max" />
+      <TextField fx:id="MaxText" layoutX="155.0" layoutY="290.0" prefHeight="40.0" prefWidth="86.0" promptText="Max">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="CompanyMachineLabel" layoutX="58.0" layoutY="358.0" text="Company Name" />
+      <TextField fx:id="CompanyMachineText" layoutX="155.0" layoutY="347.0" prefHeight="40.0" prefWidth="149.0" promptText="Comp Mn">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="MinText" layoutX="312.0" layoutY="290.0" prefHeight="40.0" prefWidth="86.0" promptText="Min">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="MinLabel" layoutX="270.0" layoutY="302.0" text="Min" />
+      <Button fx:id="AddModifySaveButton" layoutX="262.0" layoutY="400.0" mnemonicParsing="false" onAction="#addPart" prefHeight="28.0" prefWidth="59.0" text="Save" />
+      <Button fx:id="AddModifyPartCancel" layoutX="339.0" layoutY="400.0" mnemonicParsing="false" onAction="#showMainScreen" prefHeight="28.0" prefWidth="59.0" text="Cancel" />
+   </children>
+</AnchorPane>
